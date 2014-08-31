@@ -30,3 +30,6 @@ v1.1
 * Known issue: ATVs are stuck inside helicopter floor when attached to the Chinook. Should have no lasting effect when ejecting.
 v1.11 Hotfix
 * Fixed: ATVs no longer stuck in floor, slightly raised.
+
+v1.11 Hotfix
+* Fixed: ATVs raised slightly, no longer stuck in ground.
