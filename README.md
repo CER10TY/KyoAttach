@@ -14,7 +14,8 @@ Todo List
 Known Bugs
 =========
 
-* [u]Actions added via addAction will remain visible and take effect at all times, even if the vehicle is far away from the helicopter.[/u] - Squished with v1.1
+* <s>Actions added via addAction will remain visible and take effect at all times, even if the vehicle is far away from the helicopter.</s> - Squished with v1.1
+* ATvs stuck in helicopter floor when attached. Purely visual, although a 1/1000 chance that helo explodes when ejecting exists.
 
 Changelog 
 =========
