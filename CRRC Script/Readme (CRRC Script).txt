@@ -73,3 +73,7 @@ ADDITION 2014
 The same with the ATV script, this now works for Konyo's MH-47E made in ArmA3, tested with 1.18 and later. Improvements include the boat(s) being detached from the parachute just prior to slipping into the water, to prevent them from possibly flipping.
 I've found this script to have some quirks, namely that even pilots will receive the action to move into the boats if it enters a helicopter manned - range is also not considered. Now this isn't gamebreaking, you've just got to be smart about it to not move into the boat as pilot :P
 Other than that, this works perfectly fine, if you keep the usual guidelines in mind (straight helicopter when ejecting stuff, for example). So have fun!
+
+ADDITION 31/08/2014
+
+Two new files have been added: description.ext and the functions folder. Both are mandatory to use if you want to use the attachOnStart function. Make sure to copy it all over proper.

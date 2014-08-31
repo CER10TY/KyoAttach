@@ -54,4 +54,4 @@ boat1 attachTo [_chuteboat1,[0,0,0]];
 sleep 2;
 boat1 allowDamage true;
 
-boat1 addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf"];
+boat1 addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];

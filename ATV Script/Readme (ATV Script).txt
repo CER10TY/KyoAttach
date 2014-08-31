@@ -53,3 +53,7 @@ This is now converted for proper usage with Konyo's MH-47E in ArmA3 1.18. It has
 During testing I noticed that the ATVs sink into the ground and flip because they're still attached to the parachute. This caused them to flip into all kinds of unusable positions, but not anymore.
 
 I haven't edited any parts of this manual in regards to the update, just added this notation. I've by now removed the obsolete folders within this script - the vital files remain. It is still outlined on how to use these properly in this manual, and there should be no issues.
+
+ADDTION 31/08/2014
+
+Two new files have been added: description.ext and the functions folder. All 2 must be properly copied over to your mission for the ON START UP ATTACHMENT to work. If you do not wish to attach the vehicles on startup, you can ignore these files.

@@ -2,7 +2,6 @@
 Script by tryteyker
 For use with Konyo's MH-47E Addon
 1 Boat Eject version
-SPECIAL THANKS TO F2K SEL FOR FIXING UP THE WHILE LOOP.
 */
 
 _unit = _this select 0;
@@ -24,6 +23,9 @@ while {boat1 distance chinook < 9} do {
 detach boat1;
 boat1 enableSimulation true;
 boat1 allowDamage false;
+
+_vel = velocity chinook;
+_dir = getDir chinook;
 
 if (speed chinook > 25 && (count crew boat1) > 0) then {
 boat1 setvelocity [(_vel select 0) - 15 * (sin _dir),(_vel select 1) - 15 * (cos _dir),0];  
@@ -52,4 +54,4 @@ boat1 attachTo [_chuteboat1,[0,0,0]];
 sleep 2;
 boat1 allowDamage true;
 
-boat1 addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf"];
+boat1 addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];

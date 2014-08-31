@@ -14,10 +14,10 @@ atv2 = ATV select 1;
 
 _unit removeaction _ID;
 
-if (isNull chinook) exitWith {_unit addAction [("<t color=""#33FFFF"">" + ("Attach ATVs") + "</t>"),"attach2atv.sqf"]};
+if (isNull chinook) exitWith {_unit addAction [("<t color=""#33FFFF"">" + ("Attach ATVs") + "</t>"),"attach2atv.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"]};
 
 if ((count ATV) == 1) exitWith {
-_unit addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf"];
+_unit addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];
 hint "1 ATV present. Use Action again to tow ATV into the vehicle.";
 };
 
@@ -28,4 +28,4 @@ atv2 setDir 180;
 atv1 enablesimulation false;
 atv2 enablesimulation false;
 
-ejectatv = chinook addAction [("<t color=""#33FFFF"">" + ("Eject ATVs") + "</t>"),"ejectatvs.sqf"];
+ejectatv = chinook addAction [("<t color=""#33FFFF"">" + ("Eject ATVs") + "</t>"),"ejectatvs.sqf",nil,5];

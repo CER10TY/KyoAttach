@@ -13,11 +13,11 @@ boat1 = _boats select 0;
 boat2 = _boats select 1;
 _unit removeAction _ID;
 
-if (isNull chinook) exitWith {_unit addAction [("<t color=""#33FFFF"">" + ("Attach boats") + "</t>"),"attachboat.sqf"]};
+if (isNull chinook) exitWith {_unit addAction [("<t color=""#33FFFF"">" + ("Attach boats") + "</t>"),"attachboat.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"]};
 if ((getposATL chinook select 2) > 5 || (!((getposATL chinook select 2) < 2) && (getposASLW chinook select 2) > 5)) exitWith {};
 
 if ((count _boats) == 1) exitWith {
-_unit addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf"];
+_unit addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];
 hint "1 boat present. Use Action again to tow boat into the vehicle.";
 };
 
