@@ -22,7 +22,7 @@ ATV2 allowDamage false;
 		};
 		ATV1 enablesimulation true;
 		sleep 2.5;
-		_chute = createVehicle ["ParachuteWest",(getpos ATV1),[],0,"FLY"];
+		_chute = createVehicle ["B_Parachute_02_F",(getpos ATV1),[],0,"FLY"];
 		_chute setpos [(getpos ATV1 select 0), getpos ATV1 select 1, (getpos ATV1 select 2)];
 		_chute setDir (getDir ATV1);
 		ATV1 attachTo [_chute,[0,0,0]];
@@ -39,14 +39,14 @@ ATV2 allowDamage false;
 		};
 		ATV2 enablesimulation true;
 		sleep 2.5;
-		_chute2 = createVehicle ["ParachuteWest",(getpos ATV2),[],0,"FLY"];
+		_chute2 = createVehicle ["B_Parachute_02_F",(getpos ATV2),[],0,"FLY"];
 		_chute2 setpos [(getpos ATV2 select 0), getpos ATV2 select 1, (getpos ATV2 select 2)];
 		_chute2 setDir (getDir ATV2);
 		ATV2 attachTo [_chute2,[0,0,0]];
 		_chute2 setvelocity [0,0,-1];
 		_chute2 allowDamage false;
 		ATV2 setDamage 0;
-		ATV1 addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf"];
+		ATV1 addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];
 };
 
 if ((getposATL chinook select 2) <= 25) then {
@@ -68,7 +68,7 @@ if ((speed chinook) < 15) then {
 ATV2 setVelocity [(sin (getDir ATV2)) * 20, (cos (getDir ATV2)) * 20, 1];
 };
 ATV2 enablesimulation true;
-ATV1 addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf"];
+ATV1 addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];
 };
 
 ATV1 allowDamage true;

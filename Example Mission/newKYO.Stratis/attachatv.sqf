@@ -14,14 +14,14 @@ _unit removeaction _ID;
 
 //hint format ["%1",chinook];
 
-if (isNull chinook) exitWith {_unit addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf"]};
+if (isNull chinook) exitWith {_unit addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"]};
 
 if ((count ATV) > 1) exitWith {
-_unit addAction [("<t color=""#33FFFF"">" + ("Attach ATVs") + "</t>"),"attach2atv.sqf"];
+_unit addAction [("<t color=""#33FFFF"">" + ("Attach ATVs") + "</t>"),"attach2atv.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];
 hint "2 ATVs present, use the action again to tow both into the Chinook.";
 };
 
 atv1 attachTo [chinook,[0.1,3,0]];
 atv1 enablesimulation false;
 atv1 setDir 180;
-detachATV = chinook addAction [("<t color=""#33FFFF"">" + ("Eject ATV") + "</t>"),"detach.sqf"];
+detachATV = chinook addAction [("<t color=""#33FFFF"">" + ("Eject ATV") + "</t>"),"detach.sqf",nil,5];

@@ -21,8 +21,9 @@ _unit addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.
 hint "1 ATV present. Use Action again to tow ATV into the vehicle.";
 };
 
-atv1 attachTo [chinook,[0.2,-3,-0.5]];
-atv2 attachTo [chinook,[0.2,3,-0.3]];
+//atv1 attachTo [chinook,[0.2,-3,-0.5]];
+atv1 attachTo [chinook,[0.1,-2.5,-0.2]];
+atv2 attachTo [chinook,[0.1,3,-0.2]];
 atv1 setdir 180;
 atv2 setDir 180;
 atv1 enablesimulation false;
