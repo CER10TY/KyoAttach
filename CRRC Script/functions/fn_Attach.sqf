@@ -23,8 +23,8 @@ switch _type do { // There is isKindOf, but it requires us to specify a specific
 		} else {
 		atv1 = _localATVs select 0;
 		atv2 = _localaTVs select 1;
-		atv1 attachTo [chinook,[0.2,-3,-0.5]];
-		atv2 attachTo [chinook,[0.2,3,-0.3]];
+		atv1 attachTo [chinook,[0.1,-2.5,-0.2]];
+		atv2 attachTo [chinook,[0.1,3,-0.2]];
 		atv1 setdir 180;
 		atv2 setDir 180;
 		atv1 enablesimulation false;

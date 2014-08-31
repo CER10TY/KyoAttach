@@ -15,7 +15,7 @@ Known Bugs
 =========
 
 * <s>Actions added via addAction will remain visible and take effect at all times, even if the vehicle is far away from the helicopter.</s> - Squished with v1.1
-* ATvs stuck in helicopter floor when attached. Purely visual, although a 1/1000 chance that helo explodes when ejecting exists.
+* <s>ATvs stuck in helicopter floor when attached. Purely visual, although a 1/1000 chance that helo explodes when ejecting exists.</s> - Squished with v1.11
 
 Changelog 
 =========
@@ -28,3 +28,5 @@ v1.1
 * Added: Function (TRT_fnc_attachOnStart) to immediately attach vehicle(s) to helicopter on mission startup. More info in the Readme.
 * Added: Command List, listing all relevant commands in a quick fashion.
 * Known issue: ATVs are stuck inside helicopter floor when attached to the Chinook. Should have no lasting effect when ejecting.
+v1.11 Hotfix
+* Fixed: ATVs no longer stuck in floor, slightly raised.
