@@ -29,7 +29,7 @@ ATV1 allowDamage false;
 		_chute setvelocity [0,0,-1];
 		_chute allowDamage false;
 		ATV1 setDamage 0;
-		ATV1 addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf"];
+		ATV1 addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];
 			waitUntil {(getposATL ATV1 select 2) < 5};
 			detach ATV1;
 };
@@ -44,7 +44,7 @@ if ((speed chinook) < 15) then {
 ATV1 setVelocity [(sin (getDir ATV1)) * 20, (cos (getDir ATV1)) * 20, 1];
 };
 ATV1 enablesimulation true;
-ATV1 addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf"];
+ATV1 addAction [("<t color=""#33FFFF"">" + ("Attach ATV") + "</t>"),"attachatv.sqf",[],5,true,true,"","(_target distance chinook) <= 30"];
 };
 
 ATV1 allowDamage true;

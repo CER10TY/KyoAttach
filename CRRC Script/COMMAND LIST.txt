@@ -1,0 +1,9 @@
+Attach via initialization field:
+boatObjextName addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf"];
+
+Attach on mission startup:
+
+[this] call TRT_fnc_attachOnStart;
+
+Where "this" is the object name you want to attach. 
+BEWARE; Using this action on both vehicles (if you have 2) will cause unexpected errors. Use this on one vehicle only, the function will automatically detect and attach the second one aswell.

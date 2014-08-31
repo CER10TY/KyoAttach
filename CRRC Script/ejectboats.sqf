@@ -96,5 +96,5 @@ boat1 attachTo [_chuteboat1,[0,0,0]];
 boat1 allowDamage true;
 boat2 allowDamage true;
 
-boat1 addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf"];
-boat2 addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf"];
+boat1 addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];
+boat2 addAction [("<t color=""#33FFFF"">" + ("Attach boat") + "</t>"),"attachboat.sqf",nil,5,true,true,"","(_target distance chinook) <= 30"];

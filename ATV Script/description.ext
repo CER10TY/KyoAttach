@@ -1,0 +1,13 @@
+class CfgFunctions 
+{
+	class TRT // Tag
+	{
+		class attach // Category
+		{
+			class attachOnStart
+			{
+			file = "functions\fn_attach.sqf";
+			};
+		};
+	};
+};
